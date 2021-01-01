@@ -25,7 +25,7 @@ fib n = evalState (do
         (a,b) <- get
         put (b,a+b)
     (a,b) <- get
-    return a) $ (1,2)
+    return a) (1,2)
 
 isEven x = x `rem` 2 == 0
 
